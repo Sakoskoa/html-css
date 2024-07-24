@@ -11,7 +11,7 @@ caption {
     font-size: 1.5em;
     font-weight: bold;
     padding: 10px;
-    background-color: rgba(158, 158, 158, 0.479);
+    background-color: rgba(85, 85, 85, 0.479);
 }
 
 td, th {
@@ -21,10 +21,14 @@ td, th {
 }
 
 thead {
-    background-color: gray;
+    background-color: rgb(54, 54, 54);
     color: white;
 }
 
-.num {
+tbody > tr:nth-child(odd) {
+    background-color: rgb(167, 167, 167);
+}
+
+td.num {
     text-align: right;
 }
