@@ -5,6 +5,7 @@ body {
 table {
     width: 500px;
     border-collapse: collapse;
+    position: relative;
 }
 
 caption {
@@ -23,6 +24,12 @@ td, th {
 thead {
     background-color: rgb(54, 54, 54);
     color: white;
+}
+
+thead > tr > th {
+    position: sticky;
+    top:-1px;
+    background-color:rgb(54, 54, 54);
 }
 
 tbody > tr:nth-child(odd) {
