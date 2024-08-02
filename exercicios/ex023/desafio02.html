@@ -22,6 +22,16 @@
             width:500px;
         }
 
+        th {
+            background-color: rgb(95, 95, 95);
+            color: white;
+        }
+
+        .rowgroup {
+            background-color: white;
+            color: black;
+        }
+
         
     
     </style>
@@ -32,7 +42,7 @@
             <tr>
                 <th rowspan="2" scope="col">Área</th>
                 <th rowspan="2" scope="col" >Disciplinas</th>
-                <th colspan="2" scope="colgroup">Notas <br>Nota 1 Nota 2</br></th>
+                <th colspan="2" scope="colgroup">Notas<br>Nota 1 Nota 2</br></th>
                 <th rowspan="2" scope="col">Média</th>
             </tr>
         </thead>
@@ -42,7 +52,7 @@
                 
              </tr>
             <tr>
-                <th scope="rowgroup" rowspan="4">Exatas</th>
+                <th class="rowgroup" scope="rowgroup" rowspan="4">Exatas</th>
                 <td>matematica</td>
                 <td>0.0</td>
                 <td>0.0</td>
@@ -59,6 +69,16 @@
                 <td>0.0</td>
                 <td>0.0</td>
                 <td>0.0</td>
+            </tr>
+            <tr >
+                <td>Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th rowspan="4">Média de Exatas</th>
+                
             </tr>
         </tbody>
     </table>
