@@ -11,9 +11,9 @@
 
         table {
             border-collapse: collapse;
-            width: 300px;
+            width: 400px;
         }
-
+        
         th,tr,td{
             text-align: center;
             border: 1px solid black;
@@ -25,6 +25,10 @@
         th {
             background-color: rgb(95, 95, 95);
             color: white;
+        }
+
+        .th2 {
+            text-align: left;
         }
 
         .rowgroup {
@@ -42,8 +46,12 @@
             <tr>
                 <th rowspan="2" scope="col">Área</th>
                 <th rowspan="2" scope="col" >Disciplinas</th>
-                <th colspan="2" scope="colgroup">Notas<br>Nota 1 Nota 2</br></th>
+                <th colspan="2" scope="colgroup">Notas</th>
                 <th rowspan="2" scope="col">Média</th>
+            </tr>
+            <tr>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
             </tr>
         </thead>
         <tbody>
@@ -77,8 +85,25 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <th rowspan="4">Média de Exatas</th>
-                
+                <th colspan="4" class="th2">Média de Exatas</th>
+                <th>0.0</th>
+            </tr>
+            <tr>
+                <th class="rowgroup" rowspan="2" scope="rowgroup">Humanas</th>
+                <td>Historia</td>
+                <td>0.0</td>
+                <td>0.0</td>  
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th colspan="4" class="th2">Média de Humanas</th>
+                <th>0.0</th>
             </tr>
         </tbody>
     </table>
